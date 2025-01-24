@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLMY Group Door</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Верхня лінія -->
+    <header class="top-bar">
+        <div class="contact-info">
+            <a href="viber://chat?number=%2B380966469680" class="phone">+38 (096) 646-96-80</a>
+            <a href="viber://chat?number=%2B380932793845" class="phone">+38 (093) 279-38-45</a>
+        </div>
+        <div class="right-info">
+            <a href="mailto:katerina.melnig@gmail.com" class="email">katerina.melnig@gmail.com</a>
+            <a href="https://www.instagram.com/olmy_group_door?igsh=ZnJvbDVhZmFnN2Mz" target="_blank">
+                <img src="Instagram.png" alt="Instagram" class="instagram-icon">
+            </a>
+        </div>
+    </header>
+
+    <!-- Головна секція -->
+    <section class="hero">
+        <img src="door.JPG" alt="Door Background" class="hero-image">
+        <img src="logo.png" alt="OLMY Logo" class="logo">
+    </section>
+
+    <!-- Текстова секція -->
+    <section class="content">
+        <h1>Шукаємо партнерів для співпраці!</h1>
+        <p>
+            Запрошуємо до співпраці дилерів, дизайнерів, забудовників та архітекторів! Ми - 
+            <strong>OLMY Group Door</strong>, нові, амбітні й перспективні гравці на ринку дверей, які ставлять якість і комфорт клієнта на перше місце.
+        </p>
+        <h2>ЧОМУ САМЕ МИ?</h2>
+        <ul>
+            <li>Сучасні міжкімнатні щитові двері виготовляємо всього за 1-3 тижні.</li>
+            <li>Використовуємо сертифіковані матеріали найвищої якості.</li>
+            <li>Гарантуємо вигідні умови співпраці для наших постійних партнерів.</li>
+        </ul>
+        <h2>ЩО ПРОПОНУЄМО?</h2>
+        <ul>
+            <li>Готовий початковий асортимент стильних дверей — оцініть якість і дизайн нашої продукції.</li>
+            <li>Можливість індивідуального виготовлення: двері за вашим дизайном, унікальними кольорами та розмірами.</li>
+        </ul>
+        <p>Створюймо комфортні простори разом! Працюйте з надійним партнером, який готовий зростати разом із вами.</p>
+    </section>
+
+    <!-- Фото -->
+    <section class="images">
+        <img src="image1.jpg" alt="Door Image 1">
+        <img src="image2.jpg" alt="Door Image 2">
+        <img src="image3.jpg" alt="Door Image 3">
+    </section>
+
+    <!-- Різноманітний вибір кольорів -->
+    <section class="colors">
+        <h2>Різноманітний вибір кольорів:</h2>
+        <img src="color1.jpg" alt="Color 1">
+        <img src="color2.jpg" alt="Color 2">
+        <img src="color3.jpg" alt="Color 3">
+    </section>
+
+    <!-- Склад -->
+    <section class="structure">
+        <h2>Склад:</h2>
+        <img src="structure1.png" alt="Structure 1">
+        <img src="structure2.png" alt="Structure 2">
+    </section>
+
+    <!-- Спливаюче вікно -->
+    <div id="popup" class="popup">
+        <p>Є запитання? Напишіть нам!</p>
+        <form action="send-email.php" method="post">
+            <input type="text" name="name" placeholder="Ваше ім'я" required>
+            <input type="email" name="email" placeholder="Ваш email" required>
+            <textarea name="message" placeholder="Ваше запитання" required></textarea>
+            <button type="submit">Надіслати</button>
+        </form>
+        <button class="close-popup" onclick="closePopup()">Закрити</button>
+    </div>
+
+    <!-- Нижня лінія -->
+    <footer class="bottom-bar"></footer>
+
+    <!-- JavaScript -->
+    <script>
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>

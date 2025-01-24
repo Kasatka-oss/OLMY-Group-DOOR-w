@@ -1,0 +1,96 @@
+/* Загальний стиль */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Верхня лінія */
+.top-bar {
+    background-color: #8b0000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.top-bar a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+
+.instagram-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* Головна секція */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    filter: blur(2px);
+}
+
+.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+}
+
+/* Контент */
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.content h2 {
+    font-size: 20px;
+    color: #8b0000;
+}
+
+/* Фото секції */
+.images img, .colors img, .structure img {
+    width: 100px;
+    margin: 10px;
+}
+
+/* Спливаюче вікно */
+.popup {
+    display: block;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.popup .close-popup {
+    margin-top: 10px;
+    background-color: #8b0000;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
